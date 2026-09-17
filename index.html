@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NovaCuts</title>
+<style>
+  body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; max-width: 42rem;
+         margin: 4rem auto; padding: 0 1.25rem; line-height: 1.6; color: #1a1a1a; }
+  h1 { margin-bottom: .25rem; }
+  .sub { color: #666; margin-top: 0; }
+  code { background: #f4f4f5; padding: .1rem .35rem; border-radius: 3px; }
+  a { color: #1a56db; }
+</style>
+</head>
+<body>
+  <h1>NovaCuts</h1>
+  <p class="sub">A personal tool for producing and publishing short videos to my own YouTube channel.</p>
+
+  <h2>What it does</h2>
+  <p>
+    NovaCuts is a personal, single-user automation project. It writes short
+    animated comedy sketches, renders them locally with ffmpeg, runs quality
+    and content-safety checks, and uploads the finished video to
+    <strong>my own YouTube channel</strong> using the YouTube Data API.
+  </p>
+
+  <h2>Who can use it</h2>
+  <p>
+    Only me. It runs on my own computer, against my own Google account. It is
+    not a product, it is not offered to other people, and it has no sign-up.
+  </p>
+
+  <h2>Google API access</h2>
+  <p>
+    It requests <code>youtube.upload</code> (to upload a video) and
+    <code>youtube.readonly</code> (to confirm an interrupted upload did not
+    already publish, so it never posts the same video twice). It uses no other
+    Google data.
+  </p>
+
+  <p><a href="./privacy.html">Privacy policy</a></p>
+</body>
+</html>
